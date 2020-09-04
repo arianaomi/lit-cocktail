@@ -1,0 +1,19 @@
+{
+  "name": "lit-cocktail",
+  "version": "0.0.0",
+  "description": "Webcomponent lit-cocktail following open-wc recommendations",
+  "author": "lit-cocktail",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
+  },
+  "dependencies": {
+    "lit-html": "^1.1.2",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.23.0"
+  }
+}
