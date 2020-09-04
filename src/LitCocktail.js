@@ -59,11 +59,14 @@ export class LitCocktail extends LitElement {
             };
           });
           console.log(this.completeData);
-          this.dispatchEvent(
-            new CustomEvent("response", { detail: this.completeData })
-          );
         });
     });
+    settTimeout(() => {
+      console.log(this.completeData);
+      his.dispatchEvent(
+        new CustomEvent("response", { detail: this.completeData })
+      );
+    }, 1000);
   }
   render() {
     return html``;
