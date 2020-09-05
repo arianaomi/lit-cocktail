@@ -61,9 +61,9 @@ export class LitCocktail extends LitElement {
           console.log(this.completeData);
         });
     });
-    settTimeout(() => {
+    setTimeout(() => {
       console.log(this.completeData);
-      his.dispatchEvent(
+      this.dispatchEvent(
         new CustomEvent("response", { detail: this.completeData })
       );
     }, 1000);
